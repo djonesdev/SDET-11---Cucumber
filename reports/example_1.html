@@ -1,0 +1,208 @@
+[
+  {
+    "uri": "features/lib/bbc_login.feature",
+    "id": "user-login",
+    "keyword": "Feature",
+    "name": "User Login",
+    "description": "as a User\ni want to be able to login to the bbc site",
+    "line": 1,
+    "elements": [
+      {
+        "id": "user-login;if-i-log-in-with-invalid-credentials-i-recieve-a-valid-error",
+        "keyword": "Scenario",
+        "name": "If i log in with invalid credentials i recieve a valid error",
+        "description": "",
+        "line": 5,
+        "type": "scenario",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-2.15.4/lib/capybara/cucumber.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-2.15.4/lib/capybara/cucumber.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the sign in page",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/bbc_login_step_defs.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2050907000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I input invalid login credentials",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/bbc_login_step_defs.rb:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 546681000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I click login button",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/bbc_login_step_defs.rb:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3641476000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I recieve a valid error",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/bbc_login_step_defs.rb:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 49700000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-2.15.4/lib/capybara/cucumber.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 85562000
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-login;if-i-input-an-incorrect-passwork-when-logging-in-i-recieve-a-password",
+        "keyword": "Scenario",
+        "name": "If i input an incorrect passwork when logging in I recieve a password",
+        "description": "",
+        "line": 11,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@test_debug",
+            "line": 10
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-2.15.4/lib/capybara/cucumber.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-2.15.4/lib/capybara/cucumber.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the sign in page",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/bbc_login_step_defs.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 545397000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I input a valid username",
+            "line": 13,
+            "match": {
+              "location": "features/step_definitions/bbc_login_step_defs.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 242079000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I input an invalid password",
+            "line": 14,
+            "match": {
+              "location": "features/step_definitions/bbc_login_step_defs.rb:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 179992000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I click login",
+            "line": 15,
+            "match": {
+              "location": "features/step_definitions/bbc_login_step_defs.rb:30"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "SIGHUP (SignalException)\n./features/step_definitions/bbc_login_step_defs.rb:32:in `sleep'\n./features/step_definitions/bbc_login_step_defs.rb:32:in `\"I click login\"'\nfeatures/lib/bbc_login.feature:15:in `And I click login'",
+              "duration": 1625167000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I recieve a valid password error",
+            "line": 16,
+            "match": {
+              "location": "features/step_definitions/bbc_login_step_defs.rb:35"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-2.15.4/lib/capybara/cucumber.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 275635000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
